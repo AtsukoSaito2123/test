@@ -1,0 +1,759 @@
+/* =============================================
+コンポーネント　共通パーツ
+============================================= */
+// pc-Amazon購入 BUY NOW
+.btn-buy {
+  width: 328px;
+  height: 64px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 105px;
+  background: #343e48;
+  color: #fff;
+
+  img {
+    width: 16px;
+    margin-right: 32px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+//〇arrowボタン　背景黒-左
+.arrow-left {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #343e48;
+  position: relative;
+
+  &::after {
+    content: "";
+    border: 0;
+    width: 8px;
+    height: 8px;
+    border-bottom: solid 1px #fff;
+    border-left: solid 1px #fff;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+//〇arrowボタン　背景黒-右
+.arrow-right {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #343e48;
+  position: relative;
+
+  &::after {
+    content: "";
+    border: 0;
+    width: 8px;
+    height: 8px;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+//〇arrowボタン　背景白-左
+.arrow-right-WH {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+
+  &::after {
+    content: "";
+    border: 0;
+    width: 8px;
+    height: 8px;
+    border-bottom: solid 1px #000;
+    border-left: solid 1px #000;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+// PC_VIEW MORE－arrowボタン 共通
+.btn-with-arrow {
+  display: inline-block;
+  width: 328px;
+  height: 64px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: "";
+    border: 0;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+// PC_VIEW MORE-arrowボタン 背景白
+.WH {
+  display: inline-block;
+  color: #000;
+  border: 1px solid #000;
+  transition: 0.5s;
+  p{
+    line-height: 5;
+  }
+  &::after {
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+  }
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+// PC_VIEW MORE btn 背景黒
+.BK {
+  background: #343e48;
+  color: #fff;
+
+  &::after {
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// 通常ボタン（FOR SALON-arrowなしボタン）黒
+.btn-black {
+  display: inline-block;
+  width: 328px;
+  height: 64px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 105px;
+  background: #343e48;
+  color: #fff;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// 通常ボタン 白(確認ボタン-arrowなし・一般のお客様ボタン)
+.btn-white {
+  display: inline-block;
+  width: 328px;
+  height: 64px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 105px;
+  border: 1px solid #000;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+// 日本語ボタンフォント
+.JP {
+  font-family: "Zen Old Mincho", serif;
+}
+
+// 楽天購入ボタン
+.rakutenbtn-buy {
+  width: 176px;
+  height: 64px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Amazon購入ボタン
+.amazom-buy {
+  width: 176px;
+  height: 64px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// VIDEO Play btn
+.play-btn {
+  position: relative;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+
+  .play {
+    padding-top: 50px;
+    font-family: "Cardo", serif;
+    font-size: 1.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(52, 62, 72, 0.4);
+    color: #fff;
+    position: absolute;
+    backdrop-filter: blur(4px);
+  }
+  .triangle {
+    position: absolute;
+    z-index: 10;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* =============================================
+テンプレートパーツ
+============================================= */
+
+// PC-menuハンバーガーメニュー
+.pc-menu {
+  width: 150px;
+  height: 126px;
+  position: relative;
+
+  span {
+    display: inline-block;
+    position: absolute;
+    left: 59px;
+    height: 2px;
+    background: #fff;
+
+    &:nth-last-of-type(1) {
+      top: 55px;
+      width: 32px;
+    }
+
+    &:nth-last-of-type(2) {
+      top: 71px;
+      width: 32px;
+    }
+  }
+}
+
+// PC Amazon購入 aside
+.pc-amazon-buy {
+  width: 320px;
+  height: 268px;
+  background-image: url(../img/menu-brob.png);
+  background-size: cover;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+
+  .inner {
+    width: 188px;
+    margin: 0 88px 0 44px;
+
+    img {
+      width: 166px;
+      height: 160px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 53.9px;
+        height: 16px;
+      }
+
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// header ロゴ有 ロゴ黒 背景透明
+.pc-header {
+  background: transparent;
+  width: 184px;
+  transition: 0.5s;
+
+  // border: 1px solid red;
+  .logo {
+    width: 76.1px;
+    height: 52px;
+    margin: 0 75.9px 64px 32px;
+  }
+
+  .header-link {
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+    opacity: 0.4;
+    padding-left: 32px;
+    &:hover {
+        // background-image: url(../img/blue-droplet.svg);
+        opacity: 1;
+    }
+}
+
+.is-active {
+    background-image: url(../img/blue-droplet.svg);
+    opacity: 1;
+}
+
+
+  .sns {
+    margin-bottom: 24px;
+    margin-left: 32px;
+
+    ul {
+      display: flex;
+
+      li {
+        opacity: 0.4;
+      }
+
+      li:hover {
+        opacity: 1;
+      }
+    }
+
+    a {
+      padding-right: 24px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  // FOR　SALONボタン　背景黒－文字白
+  .salon-btn {
+    width: 126px;
+    background: #343e48;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #343e48;
+    border-radius: 2px;
+    margin-left: 32px;
+
+    &:hover {
+      opacity: 0.4;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+
+// FOR SALON btn　背景白－文字黒
+.salon-btn-WH {
+  width: 126px;
+  color: #000;
+  background: #fff;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 2px;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+// header ロゴ有 ロゴ白 背景黒
+.pc-header-wh {
+  background: #343e48;
+  width: 252px;
+  padding: 97px 0 85px;
+
+  .logo {
+    margin: 0 75.9px 64px 96px;
+    width: 76.1px;
+    height: 52px;
+  }
+
+  nav ul li {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0.4;
+    padding-left: 32px;
+    margin-left: 64px;
+
+    &:hover {
+      opacity: 1;
+      background-image: url(../img/blue-droplet.svg);
+    }
+  }
+
+  .sns {
+    margin: 64px 0 0 96px;
+
+    ul {
+      display: flex;
+
+      li {
+        opacity: 1;
+      }
+
+      li:hover {
+        opacity: 0.4;
+      }
+    }
+
+    a {
+      padding-right: 24px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+//LINE UP  共通パーツ
+// シリーズタイトル
+.series-title {
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  max-width: 768px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: normal;
+  // margin: 0 4.4%;
+
+  p {
+    font-size: 1.8rem;
+
+    &::after {
+      content: "Series/";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      font-size: 1rem;
+      line-height: 5;
+    }
+  }
+}
+
+.common {
+  .wrapper {
+    margin: 0 4.4%;
+  }
+}
+
+// LINE UP-ダメージシリーズslick
+.damage-care {
+  .slick-area {
+    text-align: center;
+    margin: 0 auto;
+    padding: 64px 0 20px;
+    .slick-item {
+      display: inline-block;
+      p {
+        padding: 32px 0 32px;
+      }
+      img {
+        width: 100%;
+        height: 176px;
+        object-fit: contain;
+      }
+      .inner {
+        width: 328px;
+        padding: 32px 0 32px;
+        background: hsl(195, 40%, 86%);
+        // border: 1px solid red;
+
+        &-color {
+          background: #dee3dd;
+        }
+
+        &-color2 {
+          background: -moz-linear-gradient(left, #dee3dd, #cee3ea);
+          background: -webkit-linear-gradient(left, #dee3dd, #cee3ea);
+          background: linear-gradient(to left, #dee3dd, #cee3ea);
+        }
+        &-color3 {
+          background: #cce0de;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//   .slick-area {
+//     width: 70%;
+//   }
+// }
+
+// LINE UP-カラーシリーズ
+// .color {
+.product-area {
+  width: 680px;
+  // border: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0 20px;
+
+  img {
+    width: 100%;
+    height: 176px;
+    object-fit: contain;
+  }
+
+  .inner {
+    width: 100%;
+    width: 328px;
+    padding: 32px 0;
+    background: #e2def2;
+  }
+
+  .item {
+    // border: 1px solid blue;
+    max-width: 328px;
+  }
+
+  p {
+    padding: 32px 0;
+  }
+}
+
+// }
+
+// パンクズ ページ誘導
+.breadcrumb {
+  max-width: 768px;
+  height: 40px;
+  margin: 0 5%;
+
+  // border: 1px solid red;
+  ul {
+    display: flex;
+    position: relative;
+
+    li {
+      margin-right: 38px;
+    }
+
+    li:first-of-type::after {
+      content: "<";
+      position: absolute;
+      margin: 0 16px;
+    }
+  }
+}
+
+// footer
+footer {
+  margin: 0 auto;
+  width: 150px;
+  height: 475px;
+  padding-top: 160px;
+  // border: 1px solid blue;
+  text-align: center;
+
+  .foot-logo {
+    width: 60px;
+    height: 41px;
+    margin-bottom: 42px;
+  }
+
+  .sns {
+    padding: 0 20%;
+    margin-bottom: 42px;
+
+    img {
+      width: 24px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        opacity: 1;
+      }
+
+      li:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .foot-navi {
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+// 長方形1319
+.top-viewmore {
+  max-width: 884px;
+  height: 525px;
+  background-color: #343e48;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+  .inner {
+    text-align: left;
+    width: 328px;
+  }
+
+  p {
+    display: inline-block;
+    margin: 139px 0 56px;
+    border-bottom: 1px solid #fff;
+    font-size: 1.4rem;
+  }
+
+  &-btn {
+    width: 328px;
+    height: 64px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+
+    &:hover {
+      opacity: 0.4;
+    }
+
+    &::after {
+      content: "";
+      border: 0;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%) rotate(45deg);
+      border-top: solid 1px #fff;
+      border-right: solid 1px #fff;
+    }
+  }
+}
+
+// PC-シャンプー購入タブ
+.pc-buy-tab {
+  max-width: 504px;
+  height: 473px;
+  font-size: 1.4rem;
+  // border: 1px solid red;
+
+  h3 {
+    font-weight: normal;
+  }
+
+  .inner {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+
+    .product-image {
+      width: 176px;
+      height: 189px;
+      object-fit: contain;
+    }
+
+    .product-image2 {
+      width: 76px;
+      height: 189px;
+      object-fit: contain;
+    }
+
+    .price {
+      margin-left: 24px;
+      display: flex;
+      align-items: center;
+      width: 192px;
+    }
+  }
+
+  .btn-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    img {
+      margin-right: 32px;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 64px;
+  }
+}

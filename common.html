@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クオリタス</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+</head>
+
+<body class="common">
+    <!-- 共通のパーツをまとめたファイルです -->
+    <div class="container">
+        <!-- pc-amazom購入ボタン LINE UP-->
+        <a class="btn-buy" href="#">
+            <img src="./img/cart3.svg" alt="購入ボタン" loading="lazy">
+            <p>BUY NOW</p>
+        </a>
+        <br>
+        <!-- 黒丸矢印ボタン 左 -->
+        <a class="arrow-left" href="#"></a>
+        <!-- 黒丸矢印ボタン 右 -->
+        <a class="arrow-right" href="#"></a>
+        <!-- 白丸矢印ボタン 左 -->
+        <a class="arrow-right-WH" href="#"></a>
+        <br>
+        <!-- PC VIEW MOREボタン Top-page-LINE UP -->
+        <!-- viewmore-arrow 背景白 -->
+        <a class="btn-with-arrow WH" href="#">
+            <p>VIEW MORE</p>
+        </a>
+        <br>
+        <!-- viewmore-arrow 背景黒 -->
+        <a class="btn-with-arrow BK" href="#">
+            <p>VIEW MORE</p>
+        </a>
+        <br>
+        <!-- 確認ボタン-arrowなし 背景白 -->
+        <a class="btn-with-arrow WH" href="#">
+            <p class="JP">確認</p>
+        </a>
+        <br>
+        <!-- FOR SALON-arrowなし 背景白 -->
+        <a class="btn-black" href="#">
+            <p>FOR SALON</p>
+        </a>
+        <br>
+        <!-- 一般のお客様-arrowなし 背景白 -->
+        <a class="btn-white" href="#">
+            <p class="JP">一般のお客様</p>
+        </a>
+        <br>
+        <!-- 購入タブボタン 楽天 -->
+        <a class="rakutenbtn-buy" href="#">
+            <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+        </a>
+        <!-- 購入タブボタン Amazon -->
+        <a class="amazom-buy" href="#">
+            <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+        </a>
+        <br>
+        <!-- playボタン -->
+        <div class="play-btn">
+            <a class="play" href="#">play</a>
+            <img class="triangle" src="./img/パス 50.svg" alt="">
+        </div>
+        <br>
+
+
+        <!-- ============================================
+        テンプレートパーツ
+        ============================================= -->
+        <!-- ハンバーガーメニュー -->
+        <a class="pc-menu" href="#">
+            <img src="./img/menu-brob-0.4.png" alt="menu" loading="lazy">
+            <span></span>
+            <span></span>
+        </a>
+        <!-- アサイド共通パーツ -->
+        <aside class="pc-amazon-buy">
+            <div class="inner">
+                <img src="./img/Q+_damage care series@2x.png" alt="シャンプーシリーズ" loading="lazy">
+                <p class="JP">シリーズの購入はこちらから</p>
+                <div class="btn">
+                    <a href="#">
+                        <img src="./img/楽天ロゴ 白.svg" alt="rakuten" loading="lazy">
+                    </a>
+                    <a href="#">
+                        <img src="./img/Amazonロゴ 白.svg" alt="Amazon" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- ヘッダー 背景透明-->
+        <header class="pc-header">
+            <img class="logo" src="./img/Q+logo.svg" alt="logo" loading="lazy">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="header-link" href="#concept">CONCEPT</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#obsession">OBSESSION</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#line-up">LINE UP</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#voice">PROFESSIONAL VOICE</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#topics">TOPICS</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Instagram343E48.svg" alt="Instagram" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/LINE343E48.svg" alt="LINE" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a class="salon-btn" href="#">FOR SALON</a>
+        </header>
+        <!-- サロンボタン 背景白 -->
+        <a class="salon-btn-WH" href="#">FOR SALON</a>
+        <!-- ヘッダー背景黒 ロゴ白 -->
+        <header class="pc-header-wh">
+            <a href="#">
+                <img class="logo" src="./img/Q+logo fff.svg" alt="logo" loading="lazy">
+            </a>
+            <nav>
+                <ul>
+                    <li>CONCEPT</li>
+                </ul>
+                <ul>
+                    <li>OBSESSION</li>
+                </ul>
+                <ul>
+                    <li>Q+SP BASIC</li>
+                </ul>
+                <ul>
+                    <li>PROFESSIONAL VOICE</li>
+                </ul>
+                <ul>
+                    <li>TOPICS</li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Instagram fff.svg" alt="Instagram" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/LINE fff.svg" alt="LINE" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- フッター 共通パーツ-->
+        <footer>
+            <img class="foot-logo" src="./img/Q+logo.svg" alt="logo" loading="lazy">
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Instagram.svg" alt="Instagram" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/LINE.svg" alt="LINE" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="foot-navi">
+                <ul>
+                    <li>
+                        <a href="#">COMPANY</a>
+                    </li>
+                    <li>
+                        <a href="#">PRIVACY POLICY</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>&copy;elmild Inc.</p>
+        </footer>
+        <br>
+        <!-- 各商品ページ配置のLINE UP -->
+        <!-- ダメージケアシリーズ -->
+        <section class="damage-care">
+            <div class="wrapper">
+            <h2 class="series-title">
+                <p>DAMAGE CARE</p>
+            </h2>
+                <ul class="slick-area">
+                    <li>
+                        <div class="slick-item">
+                            <div class="inner">
+                                <img src="./img/Q+shampoo@2x.png" alt="シャンプー" loading="lazy">
+                            </div>
+                            <p>Q+ダメージケアシャンプー 400ml<br>¥2,280（税込）</p>
+                            <a class="btn-with-arrow WH" href="#">
+                                <p>VIEW MORE</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slick-item">
+                            <div class="inner inner-color">
+                                <img src="./img/Q+treatment@2x.png" alt="トリートメント" loading="lazy">
+                            </div>
+                            <p>Q+ダメージケアトリートメント 400g<br>¥2,280（税込）</p>
+                            <div class="btn">
+                                <a class="btn-with-arrow WH" href="#">
+                                    <p>VIEW MORE</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slick-item">
+                            <div class="inner inner-color2">
+                                <img src="./img/Q+_shantori@2x.png" alt="シャンプー＆トリートメント" loading="lazy">
+                            </div>
+                            <p>Q+ダメージシャンプー＆トリートメントセット 400ml/400g<br>￥3,980（税込）</p>
+                            <a class="btn-with-arrow WH" href="#">
+                                <p>VIEW MORE</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slick-item">
+                            <div class="inner inner-color3">
+                                <img src="./img/Q+hair essence@2x.png" alt="エッセンス" loading="lazy">
+                            </div>
+                            <p>Q+オイルトリートメント
+                                80ml<br>¥2,280（税込）</p>
+                            <a class="btn-with-arrow WH" href="#">
+                                <p>VIEW MORE</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <!-- カラーシリーズ -->
+        <section class="color">
+            <div class="wrapper">
+            <div class="series-title">
+                <p>COLOR</p>
+            </div>
+                <ul class="product-area">
+                    <li>
+                        <div class="item">
+                            <div class="inner">
+                                <img src="./img/Q+color_shampoo_purple@2x.png" alt="カラーシャンプー" loading="lazy">
+                            </div>
+                            <p>Q+カラーシャンプー パープル 300ml<br>￥2,480（税込）</p>
+                            <a class="btn-with-arrow WH" href="#">
+                                <p>VIEW MORE</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="inner">
+                                <img src="./img/Q+color_treatment_purple@2x.png" alt="カラートリートメント" loading="lazy">
+                            </div>
+                            <p>Q+カラートリートメント　パープル300g<br>￥2,480（税込）</p>
+                            <a class="btn-with-arrow WH" href="#">
+                                <p>VIEW MORE</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <!-- グッズ -->
+        <section class="goods">
+            <div class="wrapper">
+            <div class="series-title">
+                <p>GOODS</p>
+            </div>
+                <div class="product-area">
+                    <div class="item">
+                        <div class="inner">
+                            <img src="./img/qtashampoobrush_kiri@2x.png" alt="ヘアブラシ" loading="lazy">
+                        </div>
+                        <p>Q+シャンプーブラシ<br>¥2,580（税込）</p>
+                        <a class="btn-with-arrow WH" href="#">
+                            <p>VIEW MORE</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+    
+        <!-- 商品購入タブ -->
+        <!-- Q+ダメージケアシャンプー 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+shampoo@2x.png" alt="shampoo" loading="lazy">
+                <div class="price">
+                    <h3>Q+ダメージケアシャンプー<br>
+                        400ml　¥2,280（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+ダメージケアトリートメント 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+treatment@2x.png" alt="treatment" loading="lazy">
+                <div class="price">
+                    <h3>Q+ダメージケアトリートメント<br>
+                        400g　¥2,280（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+オイルトリートメント購入タブ -->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+hair essence@2x.png" alt="essence" loading="lazy">
+                <div class="price">
+                    <h3>Q+オイルトリートメント<br>
+                        80ml　¥2,280（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+シャンプーブラシ 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/qtashampoobrush_kiri@2x.png" alt="brush" loading="lazy">
+                <div class="price">
+                    <h3>Q+シャンプーブラシ<br>
+                        120g　￥2,580（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+シャントリ 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+_shantori@2x.png" alt="shantori" loading="lazy">
+                <div class="price">
+                    <h3>Q+ダメージシャンプー＆トリートメントセット
+                        <br>400ml/400g
+                        <br>￥3,980（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+カラーシャンプーパープル 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+color_shampoo_purple@2x.png" alt="shampoo-purple"
+                    loading="lazy">
+                <div class="price">
+                    <h3>Q+カラーシャンプー<br>パープル<br>300ml　￥2,480（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+カラートリートメント　パープル 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+color_treatment_purple@2x.png" alt="shampoo purple"
+                    loading="lazy">
+                <div class="price">
+                    <h3>Q+カラートリートメント　パープル<br>300g　￥2,480（税込）</h3>
+                </div>
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Q+ダメージケアシリーズ 購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image" src="./img/Q+_damage care series@2x.png" alt="damage care series"
+                    loading="lazy">
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- カラーシャンプーパープル・トリートメントパープル購入タブ-->
+        <div class="pc-buy-tab">
+            <div class="inner">
+                <img class="product-image2" src="./img/Q+color_shampoo_purple@2x.png" alt="shampoo purple"
+                    loading="lazy">
+                <img class="product-image2" src="./img/Q+color_treatment_purple@2x.png" alt="treatment purple"
+                    loading="lazy">
+            </div>
+            <div class="btn-title">
+                <img src="./img/cart3 black.svg" alt="カート" loading="lazy">
+                <h3>購入はこちらから</h3>
+            </div>
+            <ul class="btn">
+                <li>
+                    <a class="rakutenbtn-buy" href="#">
+                        <img src="./img/楽天購入ボタン.svg" alt="楽天購入ボタン" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a class="amazom-buy" href="#">
+                        <img src="./img/Amazon購入ボタン.svg" alt="Amazon購入ボタン" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
