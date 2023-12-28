@@ -483,11 +483,11 @@ $(function () {
     ============================================= */
     $('.video-open1').modalVideo({
         channel: 'custom',
-        url: '/video/5938a5ab-510f-4b85-b27f-833068a8bd3b.mp4'
+        url: './video/5938a5ab-510f-4b85-b27f-833068a8bd3b.mp4'
     });
     $('.video-open2').modalVideo({
         channel: 'custom',
-        url: '/video/【サブリミック  エアリーフロー スパエキスパートインタビュー】　毎日のホームケアでくせ、うねり対策.mp4'
+        url: './video/【サブリミック  エアリーフロー スパエキスパートインタビュー】　毎日のホームケアでくせ、うねり対策.mp4'
     });
 
 
