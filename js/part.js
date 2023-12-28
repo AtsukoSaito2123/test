@@ -487,7 +487,7 @@ $(function () {
     });
     $('.video-open2').modalVideo({
         channel: 'custom',
-        url: './video/【サブリミック  エアリーフロー スパエキスパートインタビュー】　毎日のホームケアでくせ、うねり対策.mp4'
+        url: './video/video2.mp4'
     });
 
 
