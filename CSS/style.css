@@ -1,0 +1,763 @@
+@charset "UTF-8";
+
+/* ・・・共通・・・ */
+/* main{
+  max-width: 1500px;
+} */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.sec-title {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+.site-title a img {
+  width: 100px;
+  height: 34px;
+  vertical-align: top;
+  /* align-items: center; */
+}
+
+.site-title a {
+  height: 34px;
+  display: inline-block;
+  /* border: 1px solid red; */
+  /* line-height: 1; */
+  /* align-items: center; */
+  margin: 20px;
+}
+
+.header-box {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: black;
+  height: 60px;
+  left: 40px;
+  position: fixed;
+  right: 40px;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.header-box .title-btn {
+  color: white;
+  /* display: inline-block; */
+  /* padding-top: 20px; */
+  /* border: 1px solid red; */
+  /* text-align: right; */
+  line-height: 3;
+  margin-right: 40px;
+}
+
+.inner {
+  display: flex;
+}
+
+
+/* ハンバーガーメニュー */
+.toggle_btn {
+  /* border: 1px solid red; */
+  /* display: block; */
+  position: relative;
+  top: 0;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 4px;
+  transition: all .5s;
+  z-index: 999;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 10px;
+}
+
+.toggle_btn span:nth-child(2) {
+  top: 20px;
+}
+
+.toggle_btn span:nth-child(3) {
+  top: 30px;
+}
+
+.open .toggle_btn span {
+  background-color: white;
+}
+
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+  display: none;
+}
+
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+
+
+
+
+#nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  padding: 60px 25px;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 20;
+  opacity: 0;
+}
+
+.open #nav {
+  left: 0;
+  opacity: 1;
+}
+
+#nav ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#nav ul li a {
+  color: white;
+  font-size: 20px;
+}
+
+#mask {
+  display: none;
+  transition: all .5s;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+.first-v {
+  background-image: url(./img/sam-moghadam-khamseh-vOZP2LojrHI-unsplash.jpg);
+  height: 1000px;
+  background-size: cover;
+  max-width: 1980px;
+  background-position: center;
+}
+
+/* section */
+
+#start p {
+  padding-bottom: 100px;
+  /* text-align: center; */
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+#facility {
+  background-color: black;
+}
+
+#facility h2 {
+  color: white;
+}
+
+.fac-content p {
+  color: white;
+}
+
+.fac-title {
+  color: white;
+}
+
+.fac-content img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.fac-content {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.fac-content h3 {
+  text-align: center;
+}
+
+.fac-gym,
+.fac-studio,
+.fac-locker {
+  text-align: center;
+}
+
+.fac-gym p,
+.fac-studio p,
+.fac-locker p {
+  width: 200px;
+}
+
+
+
+
+#charm img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* margin-bottom: 30px; */
+  /* margin-right: 80px; */
+}
+
+.charm-contents {
+  /* border: 1px solid red; */
+  padding-bottom: 50px;
+}
+
+#charm .first-img,
+.second-img,
+.third-img {
+  display: flex;
+  padding-bottom: 50px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.ch-title {
+  border-left: 1px solid black;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.ch-title h4 {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.ch-title p {
+  font-size: 20px;
+}
+
+#contact {
+  background-color: black;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.contact {
+  display: flex;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact-text {
+  width: 45%;
+}
+
+.contact-text p {
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+
+.form {
+  width: 45%;
+  padding-right: 60px;
+}
+
+/* .form-action dt {
+  margin-left: 40px;
+} */
+
+.form-action dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+
+.form-action input,
+.form-action textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: white;
+}
+
+
+
+.button input {
+  color: white;
+  background-color: black;
+  border: solid 1px white;
+  max-width: 430px;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* ・・・・・・・・・・・・・・
+registration
+・・・・・・・・・・・・・・ */
+#registration {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* .main-first .sec-title{
+  font-size: 30px;
+} */
+
+
+
+.first-block {
+  width: 550px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  font-size: 17px;
+}
+
+.con-step {
+  text-align: center;
+  background-color: black;
+  width: 550px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 25px;
+}
+
+.con-step ul {
+  padding-top: 30px;
+  /* border: 1px solid red; */
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.con-step ul li {
+  padding-top: 30px;
+}
+
+.con-step ul li span {
+  margin-right: 40px;
+}
+
+.con-visit {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 550px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.con-visit a {
+  margin-top: 30px;
+  color: white;
+  display: block;
+  font-size: 25px;
+}
+
+
+/* ・・・・・・・・・・・・
+question PAGE
+・・・・・・・・・・・・ */
+
+.second-v {
+  background-image: url(./img/woman-g67b86de8b_640.jpg);
+  background-size: cover;
+  width: 100%;
+  /* height: 1000px; */
+  background-attachment: fixed;
+  padding-bottom: 150px;
+  /* backdrop-filter: brightness(50%); */
+}
+
+.second-v h1 {
+  text-align: center;
+  padding-top: 150px;
+  /* filter: drop-shadow(1px 1px 1px white); */
+}
+
+.question-block {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.question-block p {
+  font-size: 20px;
+}
+
+.bg-image {
+  position: relative;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* ・・・・・・・・・・・・
+sns PAGE
+・・・・・・・・・・・・ */
+
+li{
+  margin-left: 30px;
+}
+
+
+
+.third-v {
+  background-image: url(./img/weight-lifting-g1acdaef3c_640.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  /* background-attachment: fixed; */
+}
+
+.third-v h1 {
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+  filter: drop-shadow(2px 2px 3px #121212);
+}
+
+.sns-logo {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.sns-logo a img {
+  width: 150px;
+  border-radius: 30px;
+  filter: drop-shadow(2px 2px 3px #121212);
+}
+
+.sns-logo p {
+  color: white;
+  text-align: center;
+  filter: drop-shadow(2px 2px 3px #121212);
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/* ・・・・・・・・・・・・
+company PAGE
+・・・・・・・・・・・・ */
+#company {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+#company h2 {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.company {
+  /* max-width: 950px; */
+  margin: 0 auto;
+  display: flex;
+  padding-top: 50px;
+}
+
+.com-title h3 {
+  margin-bottom: 20px;
+}
+
+.com-title p {
+  margin-bottom: 20px;
+}
+
+.company img {
+  width: 450px;
+}
+
+.company .com-title {
+  padding-left: 50px;
+}
+
+.line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.history dl {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: block; */
+  /* border: 1px solid red; */
+  padding-left: 100px;
+}
+
+.history dt {
+  width: 10%;
+  margin-top: 25px;
+}
+
+.history dd {
+  width: 90%;
+  margin-top: 25px;
+}
+
+
+/* ・・・・・・・・・・・・
+responsiv
+・・・・・・・・・・・・ */
+@media (max-width:900px) {
+  #start p {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+  }
+
+  /* .first-v {
+    background-image: url(../img/sam-moghadam-khamseh-vOZP2LojrHI-unsplash.jpg);
+    height: 1000px;
+    background-size: cover;
+    width: 100%;
+  } */
+
+  .fac-content {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .fac-gym p,
+  .fac-studio p,
+  .fac-locker p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .fac-content img {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .fac-content h3 {
+    padding: 30px;
+    font-size: 25px;
+  }
+
+  #charm .first-img,
+  .second-img,
+  .third-img {
+    flex-direction: column;
+    padding-bottom: 50px;
+    width: 100%;
+
+  }
+
+  #charm .first-img img,
+  .second-img img,
+  .third-img img {
+    margin: 0 auto;
+    /* width: 100%; */
+  }
+
+
+  .ch-title {
+    border-left: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+
+  .ch-title h4 {
+    text-align: center;
+  }
+
+
+  /* ----------
+  question-block
+  ---------- */
+  .question-block {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* --------------
+  registration
+  -------------- */
+  /* .main-first h2{
+    width: 100%;
+  } */
+
+  .main-first {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .main-consider {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* ----------------
+  company
+  --------------- */
+  .company {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .history dl {
+    flex-direction: column;
+    padding-left: 100px;
+  }
+
+  .history dt {
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+  }
+
+  .history dd {
+    width: 90%;
+    margin-top: 25px;
+  }
+
+  .line {
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  /* -------------------
+  sns
+  ------------------- */
+  .third-v {
+    height: 100%;
+  }
+
+  .sns-logo {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+  }
+
+  .x-logo {
+    padding-bottom: 50px;
+  }
+
+  .instagram-logo {
+    padding-bottom: 50px;
+  }
+
+  .youtube-logo {
+    padding-bottom: 50px;
+  }
+
+  .facebook-logo {
+    padding-bottom: 100px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-text {
+    width: 70%;
+  }
+
+  .contact-text p {
+    padding-left: 0px;
+  }
+
+  .form {
+    padding-right: 0px;
+    width: 70%;
+  }
+
+  .button input {
+    max-width: 100%;
+  }
+}
